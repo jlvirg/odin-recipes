@@ -4,3 +4,5 @@ I first started this in another repo but became confused by the commit/push proc
 This is a beginner's lesson, however given my experience with HTML and CSS, I thought I'd make it somewhat more complex and "pretty" it up.
 
 CSS select box code credit: Himalaya Sing
+box-shadow style credit: Alligator
+button style credit: Smashing Magazine

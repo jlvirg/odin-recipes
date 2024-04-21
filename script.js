@@ -9,5 +9,5 @@ function gotoRecipe(){
         }
     }
 
-             window.location.href='recipes/'+ value + '.html'
+             window.location.href= value
         }

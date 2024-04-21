@@ -37,12 +37,65 @@
     padding-bottom: 50px;
 }
 
-  h1 {
+.recipe-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: floralwhite ;
+    height: 90%;
+    width: 60%;
+    min-width: 400px;
+    max-width: 900px;
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding-bottom: 50px;
+    
+}
+
+.scrollbar {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    overflow-y: scroll;
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 12px;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+.scrollbar::-webkit-scrollbar-track {
+    background: transparent
+  }
+  
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #D33A2C;
+    border-radius: 20px;
+  }
+
+img {
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+
+h1, h2 {
     font-family: "Sofia", serif;
-    font-size: 80px;
     color: #D33A2C;
     text-align: center;
-    padding-top: 100px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.logo{
+    padding-top: 140px;
 }
   
   .brd {
@@ -292,6 +345,7 @@
   
   .option:nth-child(3) input[type="radio"]:checked ~ .label:before {
     background-color: #D33A2C;
+    border-radius: 0 0 4px 4px;
   }
   
   .option:nth-child(3) input[type="radio"]:checked ~ .opt-val {
@@ -356,6 +410,16 @@
     margin: auto;
     font-family: Open Sans, sans-serif;
     margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #D33A2C;
+  }
+
+  a:hover {
+    color: #fff;
   }
   
   .button:active,
