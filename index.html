@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=shadow-multiple">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="font-effect-shadow-multiple" alt="Odin's Recipes Logo">Odin Recipes</h1>
+            <form id="app-cover">
+                <div id="select-box">
+                    <input type="checkbox" id="options-view-button">
+                    <div id="select-button" class="brd">
+                        <div id="selected-value">
+                            <span>Select a recipe</span>
+                        </div>
+                    <div id="chevrons">
+                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div id="options">
+                    <div class="option">
+                        <input class="s-c top" type="radio" name="recipe" value="lasagna">
+                        <input class="s-c bottom" type="radio" name="recipe" value="lasagna">
+                        <i class="fab fa-codepen"></i>
+                        <span class="label">Lasagna</span>
+                        <span class="opt-val">Lasagna</span>
+                    </div>
+                    <div class="option">
+                        <input class="s-c top" type="radio" name="recipe" value="pizza">
+                        <input class="s-c bottom" type="radio" name="recipe" value="pizza">
+                        <i class="fab fa-dribbble"></i>
+                        <span class="label">Pizza</span>
+                        <span class="opt-val">Pizza</span>
+                    </div>
+                    <div class="option">
+                        <input class="s-c top" type="radio" name="recipe" value="tacos">
+                        <input class="s-c bottom" type="radio" name="recipe" value="tacos">
+                        <i class="fab fa-behance"></i>
+                        <span class="label">Tacos</span>
+                        <span class="opt-val">Tacos</span>
+                    </div>
+                    <div id="option-bg"></div>
+                </div>
+            </div>
+            <button class="button" onclick="gotoRecipe">Go to recipe</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
