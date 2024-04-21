@@ -103,11 +103,6 @@
     margin-right: 26px;
   }
   
-  .option i {
-    width: 16px;
-    height: 16px;
-  }
-  
   #chevrons {
     position: absolute;
     top: 0;
@@ -148,18 +143,6 @@
     line-height: 1;
     transition: 0.3s ease all;
     z-index: 2;
-  }
-  
-  .option i {
-    position: absolute;
-    left: 14px;
-    padding: 0;
-    display: none;
-  }
-  
-  #options-view-button:checked ~ #options .option i {
-    display: block;
-    padding: 12px 0;
   }
   
   .label {
@@ -354,4 +337,44 @@
     top: 80px;
     background-color: #D33A2C;
     border-radius: 0 0 4px 4px;
+  }
+
+  .button {
+    align-items: center;
+    background-color: #FFE7E7;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #D33A2C;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.8em;
+    line-height: 33.4929px;
+    padding: 2px 12px;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    margin: auto;
+    font-family: Open Sans, sans-serif;
+    margin-top: 30px;
+  }
+  
+  .button:active,
+  .button:hover,
+  .button:focus {
+    outline: 0;
+  }
+  
+  
+  .button:hover, .button:active {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    color: #FFFFFF;
+  }
+  
+  .button:active:hover,
+  .button:focus:hover,
+  .button:focus{
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    color: #FFFFFF;
   }
